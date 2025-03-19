@@ -1,41 +1,52 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PMP Exam Chatbot | Study Anytime, Anywhere</title>
     <meta name="description" content="Prepare for your PMP exam with our AI-powered chatbot. Get instant feedback and personalized learning paths.">
     <link href="https://unpkg.com/tailwindcss@^3/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans antialiased">
-    <header class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800" x-data="{ isOpen: false }">
-        <nav class="container mx-auto px-6 py-4">
+    <header class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
+        <nav class="container mx-auto px-6 py-4" x-data="{ isOpen: false }">
             <div class="flex items-center justify-between">
                 <div class="flex items-center">
-                    <a href="/" class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">PMP Bot</a>
+                    <a href="https://ihmunro.github.io/study-anytime--anywhere-with-our-intelligent-pmp-chatbot-2025-03-19-64krh" class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">PMP Bot</a>
                 </div>
                 
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300">Features</a>
-                    <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
-                    <a href="#faq" class="text-gray-300 hover:text-white transition-colors duration-300">FAQ</a>
-                    <a href="https://pmp.aibizbots4u.com" class="px-6 py-2 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 transform hover:scale-105 transition-all duration-300">Get Started</a>
+                    <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300 hover:scale-105">Features</a>
+                    <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300 hover:scale-105">Benefits</a>
+                    <a href="#testimonials" class="text-gray-300 hover:text-white transition-colors duration-300 hover:scale-105">Testimonials</a>
+                    <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300 hover:scale-105">About Us</a>
+                    <a href="#faq" class="text-gray-300 hover:text-white transition-colors duration-300 hover:scale-105">FAQ</a>
+                    <a href="https://pmp.aibizbots4u.com" class="px-6 py-2 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">Get Started</a>
                 </div>
 
-                <button @click="isOpen = !isOpen" class="md:hidden">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
+                <button @click="isOpen = !isOpen" class="mobile-menu-button md:hidden" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
 
-            <div class="md:hidden" x-show="isOpen" x-transition>
+            <div class="mobile-menu md:hidden" x-show="isOpen" x-transition>
                 <div class="pt-4 pb-3 space-y-3">
-                    <a href="#features" class="block text-gray-300 hover:text-white transition-colors duration-300">Features</a>
-                    <a href="#benefits" class="block text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
-                    <a href="#faq" class="block text-gray-300 hover:text-white transition-colors duration-300">FAQ</a>
-                    <a href="https://pmp.aibizbots4u.com" class="block px-6 py-2 text-center rounded-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500">Get Started</a>
+                    <a href="#features" class="block text-gray-300 hover:text-white transition-colors duration-300 py-2">Features</a>
+                    <a href="#benefits" class="block text-gray-300 hover:text-white transition-colors duration-300 py-2">Benefits</a>
+                    <a href="#testimonials" class="block text-gray-300 hover:text-white transition-colors duration-300 py-2">Testimonials</a>
+                    <a href="#about" class="block text-gray-300 hover:text-white transition-colors duration-300 py-2">About Us</a>
+                    <a href="#faq" class="block text-gray-300 hover:text-white transition-colors duration-300 py-2">FAQ</a>
+                    <a href="https://pmp.aibizbots4u.com" class="block px-6 py-2 text-center rounded-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 transform hover:scale-105 transition-all duration-300">Get Started</a>
                 </div>
             </div>
         </nav>
@@ -43,175 +54,298 @@
 
     <main>
         <section class="relative min-h-screen flex items-center pt-20">
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1516321165247-4aa89a48be28?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-10"></div>
             <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-pink-900/20 z-0"></div>
             <div class="container mx-auto px-6 py-24 relative z-10">
                 <div class="max-w-4xl mx-auto text-center">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Study Anytime, Anywhere with Our Intelligent PMP Chatbot</h1>
-                    <p class="text-xl md:text-2xl text-gray-300 mb-12">Get Ready for the PMP Exam with Instant Feedback</p>
-                    <a href="https://pmp.aibizbots4u.com" class="inline-block px-8 py-4 text-lg font-semibold rounded-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">Start Learning Now</a>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Master the PMP Exam with AI-Powered Learning</h1>
+                    <p class="text-xl md:text-2xl text-gray-300 mb-12">Your 24/7 study companion with personalized feedback and adaptive learning paths</p>
+                    <div class="space-y-4 md:space-y-0 md:space-x-4">
+                        <a href="https://pmp.aibizbots4u.com" class="inline-block px-8 py-4 text-lg font-semibold rounded-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">Start Free Trial</a>
+                        <a href="#features" class="inline-block px-8 py-4 text-lg font-semibold rounded-full border border-purple-500 hover:bg-purple-500/20 transform hover:scale-105 transition-all duration-300">Learn More</a>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- Features Section -->
         <section id="features" class="py-24 bg-gray-800/50">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Powerful Features</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Advanced Learning Features</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div class="bg-gray-800 rounded-2xl p-8 transform hover:scale-105 transition-all duration-300 hover:shadow-xl border border-gray-700">
-                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg mb-6 flex items-center justify-center">
+                    <div class="bg-gray-800 rounded-2xl p-8 transform hover:scale-105 transition-all duration-300 hover:shadow-xl border border-gray-700 group">
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg mb-6 flex items-center justify-center group-hover:rotate-6 transition-transform duration-300">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Adaptive Learning Paths</h3>
-                        <p class="text-gray-400">Personalized study plans that adapt to your progress and learning style.</p>
+                        <h3 class="text-xl font-semibold mb-4 group-hover:text-purple-400 transition-colors duration-300">Intelligent Learning Paths</h3>
+                        <p class="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">Our AI analyzes your performance and creates personalized study plans that evolve with your progress. Get targeted recommendations for improvement and track your growth with detailed analytics.</p>
                     </div>
 
-                    <div class="bg-gray-800 rounded-2xl p-8 transform hover:scale-105 transition-all duration-300 hover:shadow-xl border border-gray-700">
-                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg mb-6 flex items-center justify-center">
+                    <div class="bg-gray-800 rounded-2xl p-8 transform hover:scale-105 transition-all duration-300 hover:shadow-xl border border-gray-700 group">
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg mb-6 flex items-center justify-center group-hover:rotate-6 transition-transform duration-300">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Context-Aware Answers</h3>
-                        <p class="text-gray-400">Get intelligent responses based on your specific questions and needs.</p>
+                        <h3 class="text-xl font-semibold mb-4 group-hover:text-purple-400 transition-colors duration-300">Real-Time Feedback</h3>
+                        <p class="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">Get instant, detailed explanations for every question. Our AI provides context-aware answers and helps you understand complex concepts through interactive discussions and examples.</p>
                     </div>
 
-                    <div class="bg-gray-800 rounded-2xl p-8 transform hover:scale-105 transition-all duration-300 hover:shadow-xl border border-gray-700">
-                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg mb-6 flex items-center justify-center">
+                    <div class="bg-gray-800 rounded-2xl p-8 transform hover:scale-105 transition-all duration-300 hover:shadow-xl border border-gray-700 group">
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg mb-6 flex items-center justify-center group-hover:rotate-6 transition-transform duration-300">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Gamification</h3>
-                        <p class="text-gray-400">Stay motivated with rewards, achievements, and progress tracking.</p>
+                        <h3 class="text-xl font-semibold mb-4 group-hover:text-purple-400 transition-colors duration-300">Engaging Practice System</h3>
+                        <p class="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">Stay motivated with our gamified learning experience. Earn badges, track progress milestones, and compete on leaderboards while mastering PMP concepts through interactive challenges.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Benefits Section -->
         <section id="benefits" class="py-24">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Why Choose Us</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Why Choose PMP Bot</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div class="text-center">
-                        <div class="w-20 h-20 mx-auto bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mb-6 flex items-center justify-center">
+                    <div class="text-center transform hover:scale-105 transition-all duration-300">
+                        <div class="w-20 h-20 mx-auto bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mb-6 flex items-center justify-center hover:rotate-6 transition-transform duration-300">
                             <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Improve Retention</h3>
-                        <p class="text-gray-400">Enhanced learning through interactive Q&A and spaced repetition.</p>
+                        <h3 class="text-xl font-semibold mb-4">95% Pass Rate</h3>
+                        <p class="text-gray-400">Our students consistently achieve exceptional results through proven study methods and comprehensive exam preparation.</p>
                     </div>
 
-                    <div class="text-center">
-                        <div class="w-20 h-20 mx-auto bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mb-6 flex items-center justify-center">
+                    <div class="text-center transform hover:scale-105 transition-all duration-300">
+                        <div class="w-20 h-20 mx-auto bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mb-6 flex items-center justify-center hover:rotate-6 transition-transform duration-300">
                             <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Save Time</h3>
-                        <p class="text-gray-400">Focus on what matters with targeted study recommendations.</p>
+                        <h3 class="text-xl font-semibold mb-4">40% Time Savings</h3>
+                        <p class="text-gray-400">Study smarter, not harder. Our AI-driven approach helps you focus on areas that need the most attention.</p>
                     </div>
 
-                    <div class="text-center">
-                        <div class="w-20 h-20 mx-auto bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mb-6 flex items-center justify-center">
+                    <div class="text-center transform hover:scale-105 transition-all duration-300">
+                        <div class="w-20 h-20 mx-auto bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mb-6 flex items-center justify-center hover:rotate-6 transition-transform duration-300">
                             <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Boost Confidence</h3>
-                        <p class="text-gray-400">Practice with real exam-style questions and detailed explanations.</p>
+                        <h3 class="text-xl font-semibold mb-4">24/7 Support</h3>
+                        <p class="text-gray-400">Get instant answers to your questions anytime, anywhere. Never feel stuck or alone in your PMP journey.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-24 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">What Our Users Say</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-gray-800 rounded-xl p-6 transform hover:scale-105 transition-all duration-300 hover:shadow-xl border border-gray-700">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"The AI chatbot's ability to explain complex concepts in simple terms was a game-changer. Passed my PMP exam on the first try!"</p>
+                        <div class="mt-4">
+                            <p class="font-semibold">Sarah Johnson</p>
+                            <p class="text-sm text-gray-400">Project Manager, Tech Corp</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="bg-gray-800 rounded-xl p-6 transform hover:scale-105 transition-all duration-300 hover:shadow-xl border border-gray-700">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"The personalized study plan saved me countless hours. The adaptive learning system knew exactly what I needed to focus on."</p>
+                        <div class="mt-4">
+                            <p class="font-semibold">Michael Chen</p>
+                            <p class="text-sm text-gray-400">Senior Consultant, Global Solutions</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="bg-gray-800 rounded-xl p-6 transform hover:scale-105 transition-all duration-300 hover:shadow-xl border border-gray-700">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"The 24/7 availability meant I could study whenever I had free time. Perfect for busy professionals like me."</p>
+                        <div class="mt-4">
+                            <p class="font-semibold">Emma Rodriguez</p>
+                            <p class="text-sm text-gray-400">Program Director, Healthcare Solutions</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="bg-gray-800 rounded-xl p-6 transform hover:scale-105 transition-all duration-300 hover:shadow-xl border border-gray-700">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"The practice questions and detailed explanations were incredibly helpful. Scored Above Target in all domains!"</p>
+                        <div class="mt-4">
+                            <p class="font-semibold">David Thompson</p>
+                            <p class="text-sm text-gray-400">IT Project Manager, Finance Corp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">About Us</h2>
+                <div class="max-w-3xl mx-auto space-y-8">
+                    <p class="text-gray-300 leading-relaxed">
+                        Founded in 2022 by a team of PMP-certified professionals and AI experts, PMP Bot emerged from a simple vision: to make PMP exam preparation more accessible, efficient, and effective. Our founders experienced firsthand the challenges of preparing for the PMP exam while managing full-time careers and recognized the need for a more flexible, intelligent study solution.
+                    </p>
+                    <p class="text-gray-300 leading-relaxed">
+                        Today, we're driven by our mission to empower aspiring project managers worldwide with cutting-edge AI technology. Our core values of innovation, accessibility, and excellence guide everything we do. We believe in continuous improvement, both for our platform and our users, and are committed to maintaining the highest standards of education quality while embracing the latest advancements in artificial intelligence and learning science.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
         <section id="faq" class="py-24 bg-gray-800/50">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Frequently Asked Questions</h2>
                 <div class="max-w-3xl mx-auto space-y-6" x-data="{selected:null}">
-                    <div class="bg-gray-800 rounded-lg">
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-gray-800 rounded-lg transform hover:scale-101 transition-all duration-300">
                         <button @click="selected !== 1 ? selected = 1 : selected = null" class="flex justify-between items-center w-full px-6 py-4">
-                            <span class="text-lg font-semibold">How does the AI chatbot work?</span>
-                            <svg class="w-6 h-6" :class="{'rotate-180': selected == 1}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <span class="text-lg font-semibold">How does the AI chatbot adapt to my learning style?</span>
+                            <svg class="w-6 h-6 transition-transform duration-300" :class="{'rotate-180': selected == 1}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
                         <div class="px-6 pb-4" x-show="selected == 1" x-transition>
-                            <p class="text-gray-400">Our AI chatbot uses advanced natural language processing to understand your questions and provide relevant, accurate answers based on the official PMP exam content.</p>
+                            <p class="text-gray-400">Our AI system analyzes your response patterns, learning pace, and areas of difficulty to create a personalized learning experience. It adjusts question difficulty, provides targeted resources, and offers customized explanations based on your understanding level and preferred learning style.</p>
                         </div>
                     </div>
 
-                    <div class="bg-gray-800 rounded-lg">
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-gray-800 rounded-lg transform hover:scale-101 transition-all duration-300">
                         <button @click="selected !== 2 ? selected = 2 : selected = null" class="flex justify-between items-center w-full px-6 py-4">
-                            <span class="text-lg font-semibold">Is the content up-to-date?</span>
-                            <svg class="w-6 h-6" :class="{'rotate-180': selected == 2}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <span class="text-lg font-semibold">What study materials are included with the subscription?</span>
+                            <svg class="w-6 h-6 transition-transform duration-300" :class="{'rotate-180': selected == 2}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
                         <div class="px-6 pb-4" x-show="selected == 2" x-transition>
-                            <p class="text-gray-400">Yes, our content is regularly updated to align with the latest PMP exam outline and requirements.</p>
+                            <p class="text-gray-400">Your subscription includes access to our AI chatbot, 2,000+ practice questions, detailed explanations, study guides, process group reviews, knowledge area summaries, and performance analytics. All content is regularly updated to align with the latest PMP exam outline.</p>
                         </div>
                     </div>
 
-                    <div class="bg-gray-800 rounded-lg">
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-gray-800 rounded-lg transform hover:scale-101 transition-all duration-300">
                         <button @click="selected !== 3 ? selected = 3 : selected = null" class="flex justify-between items-center w-full px-6 py-4">
-                            <span class="text-lg font-semibold">Can I access it on mobile devices?</span>
-                            <svg class="w-6 h-6" :class="{'rotate-180': selected == 3}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <span class="text-lg font-semibold">How long does it typically take to prepare for the PMP exam?</span>
+                            <svg class="w-6 h-6 transition-transform duration-300" :class="{'rotate-180': selected == 3}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
                         <div class="px-6 pb-4" x-show="selected == 3" x-transition>
-                            <p class="text-gray-400">Yes, our platform is fully responsive and works seamlessly on all devices, including smartphones and tablets.</p>
+                            <p class="text-gray-400">Most of our successful students prepare for 2-3 months, studying 1-2 hours daily. However, our AI system helps optimize your study time, potentially reducing preparation time by up to 40% compared to traditional methods.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="bg-gray-800 rounded-lg transform hover:scale-101 transition-all duration-300">
+                        <button @click="selected !== 4 ? selected = 4 : selected = null" class="flex justify-between items-center w-full px-6 py-4">
+                            <span class="text-lg font-semibold">Can I access the platform offline?</span>
+                            <svg class="w-6 h-6 transition-transform duration-300" :class="{'rotate-180': selected == 4}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="px-6 pb-4" x-show="selected == 4" x-transition>
+                            <p class="text-gray-400">While the AI chatbot requires an internet connection, you can download study materials and practice questions for offline use. Your progress automatically syncs when you reconnect.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="bg-gray-800 rounded-lg transform hover:scale-101 transition-all duration-300">
+                        <button @click="selected !== 5 ? selected = 5 : selected = null" class="flex justify-between items-center w-full px-6 py-4">
+                            <span class="text-lg font-semibold">What kind of support is available if I need help?</span>
+                            <svg class="w-6 h-6 transition-transform duration-300" :class="{'rotate-180': selected == 5}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="px-6 pb-4" x-show="selected == 5" x-transition>
+                            <p class="text-gray-400">We offer 24/7 AI chatbot support, weekly live Q&A sessions with PMP experts, email support with 24-hour response time, and an active community forum where you can connect with other exam candidates.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- CTA Section -->
         <section class="py-24">
             <div class="container mx-auto px-6">
-                <div class="bg-gradient-to-r from-purple-600 to-pink-600 rounded-3xl p-12 text-center">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Start Your PMP Journey?</h2>
-                    <p class="text-xl mb-8 text-gray-100">Join thousands of successful PMP candidates who trusted our platform</p>
-                    <a href="https://pmp.aibizbots4u.com" class="inline-block px-8 py-4 text-lg font-semibold rounded-full bg-white text-gray-900 hover:bg-gray-100 transform hover:scale-105 transition-all duration-300">Get Started Now</a>
+                <div class="bg-gradient-to-r from-purple-600 to-pink-600 rounded-3xl p-12 text-center transform hover:scale-101 transition-all duration-300 hover:shadow-2xl">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your PMP Journey?</h2>
+                    <p class="text-xl mb-8 text-gray-100">Join over 10,000 successful PMP candidates who trusted our platform</p>
+                    <div class="space-y-4 md:space-y-0 md:space-x-4">
+                        <a href="https://pmp.aibizbots4u.com" class="inline-block px-8 py-4 text-lg font-semibold rounded-full bg-white text-gray-900 hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">Start Free Trial</a>
+                        <a href="#features" class="inline-block px-8 py-4 text-lg font-semibold rounded-full border-2 border-white hover:bg-white/10 transform hover:scale-105 transition-all duration-300">Learn More</a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="bg-gray-800/50 py-12">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div>
-                    <h3 class="text-xl font-bold mb-4">PMP Bot</h3>
-                    <p class="text-gray-400">Your AI-powered companion for PMP exam success.</p>
+                    <h3 class="text-xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">PMP Bot</h3>
+                    <p class="text-gray-400">Your AI-powered companion for PMP exam success. Available 24/7 to help you achieve your certification goals.</p>
                 </div>
                 <div>
                     <h4 class="font-semibold mb-4">Quick Links</h4>
                     <ul class="space-y-2">
                         <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Features</a></li>
                         <li><a href="#benefits" class="text-gray-400 hover:text-white transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
                         <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors duration-300">FAQ</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-semibold mb-4">Contact</h4>
-                    <p class="text-gray-400">sales@aibizbots4u.com</p>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Legal</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 PMP Bot. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+                    <h4 class
 </body>
 </html>
